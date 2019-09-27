@@ -33,21 +33,3 @@ module.exports = function check(str, bracketsConfig) {
      
   return true;
 }
-
-// console.log( check('()', [['(', ')']]) ); // -> true
-// console.log( check('((()))()', [['(', ')']]) ); // -> true
-// console.log( check('())(', [['(', ')']]) ); // -> false
-// console.log( check('([{}])', [['(', ')'], ['[', ']'], ['{', '}']]) ); // -> true
-// console.log( check('[(])', [['(', ')'], ['[', ']']]) ); // -> false
-// console.log( check('[]()', [['(', ')'], ['[', ']']]) ); // -> true
-// console.log( check('[]()(', [['(', ')'], ['[', ']']]) ); // -> false
-// console.log(' ');
-// console.log( check('||', [['|', '|']]) ); // -> true
-// console.log( check('|()|', [['(', ')'], ['|', '|']]) ); // -> true
-// console.log( check('|(|)', [['(', ')'], ['|', '|']]) ); // -> false
-// console.log( check('|()|(||)||', [['(', ')'], ['|', '|']]) ); // -> true
-
-
-// console.log(' ');
-// console.log( check('))', [['(', ')']]) ); // -> false
-
